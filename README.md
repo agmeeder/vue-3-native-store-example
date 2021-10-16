@@ -16,4 +16,3 @@ This code uses much less '**boilerplate code**' and is more '**compositional**'.
 ## To start the application:
 > npm run dev
 
-# vue-3-native-store-example
