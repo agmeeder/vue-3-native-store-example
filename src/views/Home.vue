@@ -3,7 +3,7 @@
     <h1>Vue State Counter</h1>
 
     <p class="count">{{ count }}</p>
-    <p class="count">{{ triple }}</p>
+    <p class="count">Triple: {{ triple }}</p>
 
     <div class="change-count">
       <i @click="increase" class="fal fa-plus"></i>
@@ -15,14 +15,14 @@
 
       <p :style="{ color: color }">{{ color }}</p>
 
-      <input type="text" name="color" v-model="color" />
+      <input class="border-2 border-gray-500 rounded-md" type="text" name="color" v-model="color" />
     </div>
   </div>
 </template>
 
 <script setup>
-import store from "../store/index.js";
-const { count, color, increase, decrease, triple } = store;
+import store from '../store/index.js'
+const { count, color, increase, decrease, triple, getCoffees } = store
 </script>
 
 <style lang="scss" scoped>

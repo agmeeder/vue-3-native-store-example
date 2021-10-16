@@ -1,6 +1,6 @@
-import { createRouter, createWebHistory } from "vue-router";
-import Home from "../views/Home.vue";
-import CounterStats from "../views/CounterStats.vue";
+import { createRouter, createWebHistory } from "vue-router"
+import Home from "../views/Home.vue"
+import CounterStats from "../views/CounterStats.vue"
 
 const routes = [
   {
@@ -13,6 +13,11 @@ const routes = [
     name: "Counter Stats",
     component: CounterStats,
   },
+  {
+    path: "/coffees",
+    name: "Coffees",
+    component: () => import('../views/Coffees.vue'),
+  },
 ];
 
 const router = createRouter({
@@ -20,4 +25,4 @@ const router = createRouter({
   routes,
 });
 
-export default router;
+export default router

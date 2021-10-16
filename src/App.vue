@@ -1,15 +1,15 @@
 <template>
   <div class="app">
     <div class="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/counter-stats">Counter Stats</router-link>
+      <router-link to="/">Home</router-link> | <router-link to="/counter-stats">Counter Stats</router-link> |
+      <router-link to="/coffees">Coffees</router-link>
     </div>
     <router-view />
   </div>
 </template>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 * {
   margin: 0;
@@ -22,7 +22,7 @@
   flex-direction: column;
   align-items: center;
   padding: 16px;
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 
   .nav {
     margin-bottom: 16px;
