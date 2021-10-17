@@ -20,10 +20,12 @@
 </template>
 
 <script setup>
+import { onMounted } from 'vue'
 import store from '../store/index.js'
 const { coffees, getCoffees } = store
-// Call 'getCoffees' action to fetch the coffees from the API
-getCoffees()
-</script>
 
-<style scoped></style>
+onMounted(async () => {
+  // Call 'getCoffees' action to fetch the coffees from the API
+  await getCoffees()
+})
+</script>
